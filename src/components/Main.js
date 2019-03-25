@@ -1,10 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
-
+import { Link } from "gatsby"
+import './main.css'
 class Main extends React.Component {
   render() {
 
@@ -12,54 +9,59 @@ class Main extends React.Component {
 
     return (
       <div ref={this.props.setWrapperRef} id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
-
-        <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Intro</h2>
-          <span className="image main"><img src={pic01} alt="" /></span>
-          <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-          {close}
-        </article>
-
-        <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Work</h2>
-          <span className="image main"><img src={pic02} alt="" /></span>
-          <p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-          <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
-          {close}
-        </article>
-
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">About</h2>
-          <span className="image main"><img src={pic03} alt="" /></span>
-          <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+          {/* <span className="image main"><img src={pic03} alt="" /></span> */}
+          {/* <h2> "The failure to address issues of accessibility for persons with physical, sensory, and cognitive disabilities ultimately threatens to segregate people with disabilities as the permanent second-class citizens of the information age."</h2> */}
+
+        <h2> What is accessibility? </h2>
+
+          <p> Web accessibility means that people with disabilities can use the web regardless of the disability. Reaching that level of access is the goal of the Web Content Accessibility Guidelines (WCAG) 2.1, which is the current applicable standard from the W3C.</p>
+<h2> The problem </h2> 
+<p> 
+Currently many sites and tools are developed with accessibility barriers that make them difficult or impossible for some people to use. </p> 
+
+<h2> Where to start </h2> 
+<p>Let' face it, the WCAG Guidlines can be a very daunting  start when you're trying to make your site accessible. </p> 
+          <p> This site aims to break down the legal jargon into digestable guides and tools that developers can use to make accessible web formats...because accessibility should be accessible.</p>
           {close}
         </article>
+        <article id="principles" className={`${this.props.article === 'principles' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+          <h2 className="major">Guiding Principles</h2> 
+          <p> The WCAG guidelines are organized into 4 guiding principles: </p> 
+         <ul> 
+        <h2> 
+          Perceivable
+          </h2> 
+          <h3> Information and user interface components must be presentable to users in ways they can perceive.</h3> 
+          <p>This means that users must be able to perceive the information being presented (it can't be invisible to all of their senses). </p> 
+          <p> 
+          <Link to="/perceivable">learn how to meet this guideline</Link> 
+          </p> 
+        <h2> Operable </h2> 
+        <h3> User interface components and navigation must be operable. </h3> 
+        <p> This means that users must be able to operate the interface (the interface cannot require interaction that a user cannot perform). </p>
+        <p>
+          <Link to="/operable">learn how to meet this guideline</Link> 
+          </p>
+          <h2> Understandable </h2> 
+          <h3>Information and the operation of user interface must be understandable.</h3> 
+          <p>This means that users must be able to understand the information as well as the operation of the user interface (the content or operation cannot be beyond their understanding).</p>
+          <p>
+          <Link to="/understandble">learn how to meet this guideline</Link>
+          </p> 
+          <h2>Robust</h2>
+          <h3>Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies. </h3> 
+          <p> This means that users must be able to access the content as technologies advance (as technologies and user agents evolve, the content should remain accessible)</p>
 
-        <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Contact</h2>
-          <form method="post" action="#">
-            <div className="field half first">
-              <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
-            </div>
-            <div className="field half">
-              <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
-            </div>
-            <div className="field">
-              <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
-            </div>
-            <ul className="actions">
-              <li><input type="submit" value="Send Message" className="special" /></li>
-              <li><input type="reset" value="Reset" /></li>
-            </ul>
-          </form>
+          <Link to="/robust">learn how to meet this guideline</Link>
+          </ul>
+          {close}
+          </article>
+        <article id="toolkit" className={`${this.props.article === 'toolkit' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+          <h2 className="major">Toolkit</h2>
+          
           <ul className="icons">
-            <li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
-            <li><a href="#" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
-            <li><a href="#" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
             <li><a href="#" className="icon fa-github"><span className="label">GitHub</span></a></li>
           </ul>
           {close}
