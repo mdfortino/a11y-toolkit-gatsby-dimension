@@ -48,7 +48,7 @@ Currently many sites and tools are developed with accessibility barriers that ma
           <h3>Information and the operation of user interface must be understandable.</h3> 
           <p>This means that users must be able to understand the information as well as the operation of the user interface (the content or operation cannot be beyond their understanding).</p>
           <p>
-          <Link to="/understandble">learn how to meet this guideline</Link>
+          <Link to="/understandable">learn how to meet this guideline</Link>
           </p> 
           <h2>Robust</h2>
           <h3>Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies. </h3> 

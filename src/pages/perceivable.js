@@ -4,9 +4,11 @@ import Dino from '../images/dinosaur.jpg'
 import Dinobadcode from '../images/dinobadcode.jpg'
 import Dinogoodcode from '../images/dinogoodcode.jpg'
 import Layout from '../components/layout'
+import MediaQuery from 'react-responsive';
+
 
 const Perceivable = () => (
-  <Layout>
+  <Layout> 
     <h1>Perceivable</h1>
     <p>Users must be able to perceive the information being presented (it can't be invisible to all of their senses).</p>
     <h2>Text Alternatives for Image </h2> 
@@ -37,7 +39,7 @@ const Perceivable = () => (
     <p> 
       <Link to="/">Home</Link>
       </p> 
-   
+     
   </Layout>
 )
 
