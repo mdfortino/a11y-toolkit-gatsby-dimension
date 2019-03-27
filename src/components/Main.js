@@ -62,7 +62,7 @@ Currently many sites and tools are developed with accessibility barriers that ma
           <h2 className="major">Toolkit</h2>
           
           <ul className="icons">
-            <li><a href="#" className="icon fa-github"><span className="label">GitHub</span></a></li>
+            <li><a href="https://github.com/mdfortino/a11y-site/blob/master/Planning/resources.md" className="icon fa-github"><span className="label">GitHub</span></a></li>
           </ul>
           {close}
         </article>

@@ -9,11 +9,12 @@ import Layout from '../components/layout'
 
 const Robust = () => (
   <Layout> 
-    <h1>Perceivable</h1>
-    <p>Users must be able to perceive the information being presented (it can't be invisible to all of their senses).</p>
-    <h2>Text Alternatives for Image </h2> 
-    <p> Include appropriate, equivalent alternative text to all images, form image buttons, and image map hot spots.</p>
-    <img src={Dino}
+    <h1>Robust</h1>
+    <p>Users must be able to access the content as technologies advance (as technologies and user agents evolve, the content should remain accessible).
+</p>
+    <h2>Validating HTML </h2> 
+    <p> HTML pages include a document type declaration (sometimes referred to as !DOCTYPE statement) and are valid according to the HTML version specified by the document type declaration. The developer can use off-line or online validators (see Resources below) to check the validity of the HTML pages..</p>
+    {/* <img src={Dino}
      alt="A red Tyrannosaurus Rex: A two legged dinosaur standing upright like a human, with small arms, and a large head with lots of sharp teeth."
      title="The Mozilla red dinosaur"></img>
      <h3>Bad Code: </h3>
@@ -29,7 +30,7 @@ const Robust = () => (
   <h3> Other ways to make your website perceivable </h3>
   <ul> 
     <li> Time-based Media: Add captions to provide a way for people who are deaf or otherwise have trouble hearing the dialogue in audio visual material to be able to view the material. <a href="https://www.w3.org/TR/WCAG21/#captions-prerecorded">(WCAG GL 1.2.2) </a></li>
-    <li> Identify Purpose. Use ARIA landmarks to identify the regions of the page. <a href ="https://www.w3.org/TR/WCAG21/#identify-purpose">(WCAG GL 1.3.6)</a>
+    <li> Identify Purpose. Use ARIA landmarks to identify the regions of the page. <a href ="https://www.w3.org/TR/WCAG21/#identify-purpose">(WCAG GL 1.3.6)</a> */}
 </li> 
 </ul> 
   <p><a href = "https://webaim.org/standards/wcag/checklist"> WCAG 2 Checklist</a></p> 
